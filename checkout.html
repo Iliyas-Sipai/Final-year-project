@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>checkout</title>
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  
+ <!-- CSS Libraries -->
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ <link href="lib/animate/animate.min.css" rel="stylesheet">
+ <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+ <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+ <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+ <!-- Template Stylesheet -->
+ <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Nav Bar End -->
+   <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid">
+          <a href="index.html" class="navbar-brand">Yum <span>Zone</span></a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+   
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="navbar-nav ml-auto">
+               <a href="home.html" class="nav-item nav-link">Home</a>
+               <a href="about.html" class="nav-item nav-link">About</a>
+               <a href="menu.html" class="nav-item nav-link">Menu</a>
+               <a href="orders.html" class="nav-item nav-link">Orders</a>
+               <a href="contact.html" class="nav-item nav-link active">Contact</a>
+               <a href="cart.html"  class="nav-item nav-link active"><i class="fas fa-shopping-cart"></i><span></span></a>
+               <a href="login.html" class="nav-item nav-link"> <i class="fa-solid fa-user"></i></a>
+           </div>
+          </div>
+      </div>
+   </div>
+<!-- Nav Bar End -->
+        <!-- Page Header Start -->
+        <div class="page-header mb-0">
+         <div class="container">
+             <div class="row">
+                 <div class="col-12">
+                     <h2>Your Orders</h2>
+                 </div>
+                 <div class="col-12">
+                     <a href="home.html">Home</a>
+                     <a href="orders.html">Orders</a>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- Page Header End -->
+     <div class="container">
+      <h2>Checkout</h2>
+      <div id="cart-items"></div>
+      <p class="total">Total: $<span id="total-price">0</span></p>
+      
+      <h3>Shipping Details</h3>
+      <input type="text" id="name" placeholder="Full Name" required><br><br>
+      <input type="text" id="address" placeholder="Shipping Address" required><br><br>
+      <button onclick="placeOrder()">Place Order</button>
+  </div>
+<!-- Footer End -->
+<!-- Footer End -->
+<!-- 
+<script>
+   function loadCart() {
+       let cart = JSON.parse(localStorage.getItem("cart")) || [];
+       let cartContainer = document.getElementById("cart-items");
+       let totalPrice = 0;
+       cartContainer.innerHTML = "";
+       
+       cart.forEach(item => {
+           let div = document.createElement("div");
+           div.classList.add("cart-item");
+           div.innerHTML = `
+               <img src="${item.image}" alt="${item.title}">
+               <div>
+                   <p><strong>${item.title}</strong></p>
+                   <p>${item.description || "No description available"}</p>
+                   <p>Price: $${item.price} x ${item.qty}</p>
+               </div>
+           `;
+           cartContainer.appendChild(div);
+           totalPrice += item.price * item.qty;
+       });
+       
+       document.getElementById("total-price").textContent = totalPrice.toFixed(2);
+   }
+
+   function placeOrder() {
+       let name = document.getElementById("name").value;
+       let address = document.getElementById("address").value;
+       
+       if (!name || !address) {
+           alert("Please enter your shipping details.");
+           return;
+       }
+       
+       alert("Order placed successfully! Thank you, " + name);
+       localStorage.removeItem("cart");
+       window.location.href = "index.html"; // Redirect to home page
+   }
+   
+   loadCart(); // Load cart items on page load
+</script>
+ -->
+
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+  <!-- Template Javascript -->
+<script src="app.js"></script>
+</body>
+</html> -->

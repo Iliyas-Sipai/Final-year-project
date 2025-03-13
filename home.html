@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  
+  
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+ <!-- Nav Bar Start -->
+<div class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Yum <span>Zone</span></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+             <a href="home.html" class="nav-item nav-link">Home</a>
+             <a href="about.html" class="nav-item nav-link">About</a>
+             <a href="menu.html" class="nav-item nav-link">Menu</a>
+             <a href="orders.html" class="nav-item nav-link">Orders</a>
+             <a href="contact.html" class="nav-item nav-link active">Contact</a>
+             <a href="cart.html " class="nav-item nav-link"><i class=" fas fa-shopping-cart" id="cart-count"></i><span></span></a>  
+             <a href="login.html" class="nav-item nav-link"> <i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Nav Bar End> -->
+
+<!-- Carousel Start -->
+<div class="carousel">
+    <div class="container-fluid">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="images/carousel-3.jpg" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>Fastest Order <span>Delivery</span></h1>
+                    <p>
+                        Enjoy lightning-fast order delivery straight to your doorstep! 🚀 Fresh, hot, and delicious food delivered in no time—because your cravings shouldn't have to wait!
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn custom-btn" href="">View Menu</a>
+                        <a class="btn custom-btn" href="">Book Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+<!-- Booking Start -->
+<div class="booking">
+   <div class="container">
+       <div class="row align-items-center">
+           <div class="col-lg-7">
+               <div class="booking-content">
+                   <div class="section-header">
+                       <p>Book A Table</p>
+                       <h2>Book Your Table For Private Dinners & Happy Hours</h2>
+                   </div>
+                   <div class="about-text">
+                       <p>
+                        Enjoy an exclusive dining experience with our private dinners and happy hours. 🥂 Whether it's a romantic evening, a family gathering, or a business meeting, we offer the perfect ambiance. Savor delicious cuisine, premium drinks, and top-notch service in a cozy setting.✨
+                       </p>
+                       <p>
+                        Customize your menu and enjoy a hassle-free dining experience tailored just for you. Our private seating ensures a relaxing and intimate atmosphere. Reserve your table today and make your special moments unforgettable! 🎉
+                       </p>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-5">
+               <div class="booking-form">
+                   <form>
+                       <div class="control-group">
+                           <div class="input-group">
+                               <input type="text" class="form-control" placeholder="Name" required="required" />
+                               <div class="input-group-append">
+                                   <div class="input-group-text"><i class="far fa-user"></i></div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="control-group">
+                           <div class="input-group">
+                               <input type="email" class="form-control" placeholder="Email" required="required" />
+                               <div class="input-group-append">
+                                   <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="control-group">
+                           <div class="input-group">
+                               <input type="text" class="form-control" placeholder="Mobile" required="required" />
+                               <div class="input-group-append">
+                                   <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="control-group">
+                           <div class="input-group date" id="date" data-target-input="nearest">
+                               <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                               <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                   <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="control-group">
+                           <div class="input-group time" id="time" data-target-input="nearest">
+                               <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                               <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                   <div class="input-group-text"><i class="far fa-clock"></i></div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="control-group">
+                           <div class="input-group">
+                               <select class="custom-select form-control">
+                                   <option selected>Guest</option>
+                                   <option value="1">1 Guest</option>
+                                   <option value="2">2 Guest</option>
+                                   <option value="3">3 Guest</option>
+                                   <option value="4">4 Guest</option>
+                                   <option value="5">5 Guest</option>
+                                   <option value="6">6 Guest</option>
+                                   <option value="7">7 Guest</option>
+                                   <option value="8">8 Guest</option>
+                                   <option value="9">9 Guest</option>
+                                   <option value="10">10 Guest</option>
+                               </select>
+                               <div class="input-group-append">
+                                   <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
+                               </div>
+                           </div>
+                       </div>
+                       <div>
+                           <button class="btn custom-btn" type="submit">Book Now</button>
+                       </div>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<section class="products">
+    <h1 class="title">latest dishes</h1>
+    <div id="products-container" ><div>
+      <div class="box-container" ></div> 
+    <h1>Products</h1>
+    </div>
+   </div>
+   <div class="menu-btn">
+    <a href="menu.html" id="menu-btn" class="btn custom-btn">veiw all</a>
+ </div>
+</section>
+<!-- footer part******************************************************************************************************* -->
+<!-- Footer Start -->
+<div class="footer">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-7">
+               <div class="row">
+                   <div class="col-md-6">
+                       <div class="footer-contact">
+                           <h2>Our Address</h2>
+                           <p><i class="fa fa-map-marker-alt"></i>Kadi</p>
+                           <p><i class="fa fa-phone-alt"></i>+91 9316198853</p>
+                           <p><i class="fa fa-envelope"></i>Iliyassiapi861@gmail.com</p>
+                           <div class="footer-social">
+                               <a href=""><i class="fab fa-twitter"></i></a>
+                               <a href=""><i class="fab fa-facebook-f"></i></a>
+                               <a href=""><i class="fab fa-youtube"></i></a>
+                               <a href=""><i class="fab fa-instagram"></i></a>
+                               <a href=""><i class="fab fa-linkedin-in"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-6">
+                       <div class="footer-link">
+                           <h2>Quick Links</h2>
+                           <a href="">Terms of use</a>
+                           <a href="">Privacy policy</a>
+                           <a href="">Cookies</a>
+                           <a href="">Help</a>
+                           <a href="">FQAs</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-5">
+               <div class="footer-newsletter">
+                   <h2>Newsletter</h2>
+                   <p>New Menu Items  Announcing exciting new dishes or seasonal specials.</p>
+                    <p>Exclusive Offers & Discounts – Special coupons or deals for subscribers.</p>
+                 <p> Chef’s Special Recipe  A unique recipe for customers to try at home.</p>
+                   </p>
+                   <div class="form">
+                       <input class="form-control" placeholder="Email goes here">
+                       <button class="btn custom-btn">Submit</button>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="copyright">
+       <div class="container">
+           <p>Copyright &copy; <a href="#">Yum Zone</a>, All Right Reserved.</p>
+           <p>Designed By <a href="#">Iliyas</a></p>
+       </div>
+</div>
+<!-- Footer End -->
+
+<!-- main part of API  -->
+  <script>
+    async function fetchProducts() {
+        const foodCategories = ["pizza", "burger", "juice","snacks"]; 
+        const apiKey = "a2H2QiNNA6DMSkaNEE-ltZCVTd9yV5lHU5687K5lW2s"; 
+        const foodDescriptions = {
+            pizza: "A delicious cheesy pizza topped with fresh ingredients.",
+            burger: "A juicy burger with crispy lettuce, tomatoes, and sauce.",
+            juice: "A refreshing juice made from natural fruits and flavors."
+        };
+
+
+        let container = document.getElementById("products-container");
+        container.innerHTML = ""; 
+
+        let allProducts = []; 
+
+        for (let foodName of foodCategories) {
+            let apiURL = `https://api.unsplash.com/search/photos?query=${foodName}&client_id=${apiKey}&per_page=5`;
+
+            try {
+                let response = await fetch(apiURL);
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+                let data = await response.json();
+
+                data.results.forEach(image => {
+                    let product = {
+                        id: image.id,
+                        name: foodName.charAt(0).toUpperCase() + foodName.slice(1),
+                        description: `Delicious ${foodName} made with fresh ingredients.`,
+                        price: (Math.random() * 20 + 5).toFixed(2), 
+                        image: image.urls.small
+                    };
+
+                    allProducts.push(product); 
+                });
+
+            } catch (error) {
+                console.error(`Error fetching ${foodName} images:`, error);
+            }
+        }
+
+        allProducts.sort(() => Math.random() - 0.5);
+
+        allProducts.forEach(product => {
+            let productCard = document.createElement("div");
+            productCard.classList.add("box");
+            productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <h3 class="name">${product.name}</h3>
+                <p><strong>Description:</strong> ${product.description}</p>
+                <p><strong class="price">Price:</strong> $${product.price}</p>
+                <button class="buy-now" onclick='viewProduct(${JSON.stringify(product)})'>Order Now</button>
+            `;
+            container.appendChild(productCard);
+        });
+    }
+
+    function viewProduct(product) {
+        localStorage.setItem("selectedProduct", JSON.stringify(product)); 
+        window.location.href = "product_details.html"; 
+    }
+    fetchProducts();
+</script> 
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+ <!-- Template Javascript -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script> 
+<!-- Contact Javascript File -->
+<script src="app.js"></script>
+ 
+</body>
+</html> 
