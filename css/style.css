@@ -1138,17 +1138,7 @@ a:focus {
    max-width: 1000px;
    margin: auto;
 }
-@media screen and (max-width:678px) {
-   .container-box {
-   flex-direction: column;
-   border: 2px solid red;
-   max-width: 100px;
-      
-}
-.product-details{
-   width: 250px;
-}
-}
+
 .box img {
    width: 100%;
    height: auto;
@@ -1434,6 +1424,17 @@ a:focus {
         .back-button:hover {
             text-decoration: underline;
         }
+
+        @media screen and (max-width:678px) {
+         .container-box {
+         flex-direction: column;
+         max-width: 300px;
+            
+      }
+      .product-details{
+         width: 250px;
+      }
+      }
  
 
 
