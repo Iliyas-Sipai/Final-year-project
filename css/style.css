@@ -1139,8 +1139,14 @@ a:focus {
    margin: auto;
 }
 @media screen and (max-width:678px) {
-#products-container {
-   max-width: 600px;
+   .container-box {
+   flex-direction: column;
+   border: 2px solid red;
+   max-width: 100px;
+      
+}
+.product-details{
+   width: 250px;
 }
 }
 .box img {
