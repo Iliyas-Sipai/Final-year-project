@@ -1138,6 +1138,11 @@ a:focus {
    max-width: 1000px;
    margin: auto;
 }
+@media screen and (max-width:678px) {
+#products-container {
+   max-width: 600px;
+}
+}
 .box img {
    width: 100%;
    height: auto;

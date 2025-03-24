@@ -118,65 +118,6 @@
     </div>
  </div>
  <!-- Footer End -->
-
-
-<!-- 
- <script>
-     let product = JSON.parse(localStorage.getItem("selectedProduct"));
-
-     if (!product) {
-         document.getElementById("product-container").innerHTML = "<p>No product details found.</p>";
-     } else {
-         document.getElementById("product-container").innerHTML = `
-           <div class="product-image">
-                 <img src="${product.image}" alt="${product.name
-                 }">
-             </div>
-
-             <div class="product-details">
-                 <h2>${product.name}</h2>
-                 <p>${product.description}</p>
-                 <div class="product-price">$${product.price}</div>
-                 <div class="buttons">
-                     <button class="add-to-cart" onclick="addToCart(${product.id}, '${product.title}', ${product.price}, '${product.image}')">Add to Cart</button>
-                     <button class="buy-now" onclick="buyNow(${product.id})">Buy Now</button>
-                 </div>
-             </div>
-         `;
-     }
-
-     function buyProduct() {
-         alert("Proceeding to checkout for " + product.name);
-         // Add checkout logic here
-     }
-
-
-     function addToCart(id, name, price, image) {
-         let cart = JSON.parse(localStorage.getItem("cart")) || [];
-         let existingItem = cart.find(item => item.id === id);
-
-         if (existingItem) {
-             existingItem.qty += 1;
-         } else {
-             cart.push({ id, name, price, image, qty: 1 });
-         }
-
-         localStorage.setItem("cart", JSON.stringify(cart));
-         alert("Added to Cart!");
-     }
-
-     function buyNow(id) {
-         alert("Proceeding to checkout for product ID: " + name);
-     }
-
-     getProductDetails();
- </script> -->
-
-
-
-
-    <!-- <div id="product-container" class="product-container"></div> -->
-
     <script>
         let product = JSON.parse(localStorage.getItem("selectedProduct"));
 
